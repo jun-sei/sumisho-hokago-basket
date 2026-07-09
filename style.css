@@ -1,0 +1,204 @@
+:root {
+  --main: #2f5f3b;
+  --main-soft: #e8f3ec;
+  --border: #d7ded9;
+  --text: #1f2a24;
+  --muted: #5f6b63;
+  --warning-bg: #fff7e6;
+  --warning-border: #f0b44c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background: #f5f7f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "BIZ UDPゴシック", "Noto Sans JP", "Yu Gothic", sans-serif;
+  line-height: 1.9;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 20px 14px 40px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 18px;
+  box-shadow: 0 8px 24px rgba(31, 42, 36, 0.06);
+}
+
+header {
+  border-bottom: 3px solid var(--main);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: var(--main);
+  font-size: 1.75rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.lead {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.badge-test {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  color: #8a5a00;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+h2 {
+  margin: 28px 0 10px;
+  padding-left: 10px;
+  border-left: 5px solid var(--main);
+  color: var(--main);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h3 {
+  margin: 20px 0 8px;
+  color: var(--text);
+  font-size: 1.08rem;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul {
+  margin: 8px 0 16px;
+  padding-left: 1.3em;
+}
+
+li {
+  margin: 0 0 8px;
+}
+
+.notice {
+  margin: 18px 0;
+  padding: 14px 14px;
+  border-radius: 12px;
+  background: var(--main-soft);
+  border: 1px solid #c5ddcc;
+}
+
+.warning {
+  margin: 18px 0;
+  padding: 14px 14px;
+  border-radius: 12px;
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+}
+
+ruby {
+  ruby-position: over;
+}
+
+rt {
+  font-size: 0.52em;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.updated {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #9aa0a6;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--main);
+  font-weight: 700;
+}
+
+@media (min-width: 720px) {
+  .page {
+    padding: 32px 20px 56px;
+  }
+
+  .card {
+    padding: 32px 36px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 17px;
+  }
+
+  .page {
+    padding: 12px 8px 32px;
+  }
+
+  .card {
+    border-radius: 14px;
+    padding: 18px 14px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  h2 {
+    font-size: 1.18rem;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    font-family: "BIZ UDPゴシック", "Noto Sans JP", "Yu Gothic", sans-serif;
+    font-size: 12pt;
+    line-height: 1.75;
+  }
+
+  .page {
+    max-width: none;
+    padding: 0;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .badge-test {
+    border: 1px solid #999;
+    color: #000;
+    background: #fff;
+  }
+}
